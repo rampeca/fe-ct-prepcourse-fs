@@ -45,7 +45,7 @@ function agregarStringInvertida() {
       var ArregloRev=[];
       StrToArr=this.split('');
       for(var i=StrToArr.length-1; i>=0; i--){
-      ArregloRev.push(StrToArr[i]);
+         ArregloRev.push(StrToArr[i]);
       }
       StringRev=ArregloRev.join('');
       return StringRev;
