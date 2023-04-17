@@ -5,7 +5,6 @@ function mayorMenor(numeros){
     var arrOrd=[];
     var Resultado=[];
     numeros.forEach((element) => {
-        console.log(typeof(element));
         if(typeof(element)==='number'){
             nArr.push(element);
         }else{
@@ -16,12 +15,10 @@ function mayorMenor(numeros){
                 }
             }else{
                 if(typeof(element)==='object'){
-                    console.log(element);
                     var arrInt=element;
                     var tam=arrInt.length;
                     var numEnto;
                     for(var i=0; i<tam; i++){
-                        console.log(element[i]);
                         numEnto=parseInt(element[i]);
                         if(numEnto!='NaN'){
                             nArr.push(numEnto);
@@ -31,7 +28,6 @@ function mayorMenor(numeros){
             }
         }
     });
-    console.log(nArr);
     arrOrd=nArr.sort(function(a,b){return a - b});
     Resultado.push(nArr.pop());
     Resultado.push(nArr.shift());
@@ -40,5 +36,3 @@ function mayorMenor(numeros){
 }
 
 console.log(mayorMenor([3,6,4,['43',34],21,8]));
-
-//[3,6,2,8,5,[5,9,56,4,32]]
