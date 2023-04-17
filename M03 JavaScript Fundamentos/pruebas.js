@@ -36,3 +36,4 @@ function mayorMenor(numeros){
 }
 
 console.log(mayorMenor([3,6,4,['43',34],21,8]));
+// Para ver como funciona el Sublime Merge
