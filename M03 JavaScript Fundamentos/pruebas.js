@@ -33,7 +33,6 @@ function mayorMenor(numeros){
     });
     console.log(nArr);
     arrOrd=nArr.sort(function(a,b){return a - b});
-    //nArr=numeros.sort(function(a,b){return a - b});
     Resultado.push(nArr.pop());
     Resultado.push(nArr.shift());
 
